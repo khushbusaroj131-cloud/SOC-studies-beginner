@@ -1,0 +1,111 @@
+A complete Open-Source SOC (Security Operations Center) 
+Lab built using community-driven tools. This project integrates Wazuh, Graylog, MISP, Cortex, TheHive, Velociraptor, and n8n to provide a real-world 
+SOC experience with log analysis, threat hunting, DFIR, automation, and incident management.
+
+🎯 Learning Goals
+
+Build an open-source SOC stack with:
+Wazuh, Graylog, MISP, Cortex, TheHive, Velociraptor, n8n
+
+Collect logs from Windows, Linux, Cloud, and Syslog devices
+
+Perform log analysis, correlation, and dashboarding
+
+Use MISP for threat intelligence & IOC enrichment
+
+Practice DFIR & Threat Hunting with Velociraptor
+
+Automate SOC workflows using n8n
+
+💻 Lab Requirements
+Resource	Minimum Specs
+CPU	16 cores
+RAM	32 GB
+Disk	100 GB+ SSD
+Network	Stable Internet
+Virtualization	VMware Workstation / VirtualBox / Proxmox / ESXi
+🧩 Lab Architecture
+🔹 Log Sources
+
+Windows Server → Wazuh Agent
+
+Linux Server → Wazuh Agent
+
+Cloud Resources → AWS, Azure, GCP integrations
+
+Syslog Devices → Firewalls, Routers, Switches, Proxies
+
+🔹 Core SOC Components
+1. Wazuh Manager (Log Analysis)
+
+Install Wazuh Manager
+
+Collect logs from agents & Syslog
+
+2. Graylog + Wazuh Indexer (Log Storage)
+
+Setup Graylog
+
+Configure Wazuh Indexer
+
+3. Wazuh Dashboard (Visualization)
+
+Install Wazuh Dashboard
+
+Build SIEM-style detection dashboards
+
+4. MISP (Threat Intelligence)
+
+Install MISP
+
+Share & enrich IOCs
+
+5. Cortex + TheHive (Incident Management)
+
+Install TheHive
+
+Integrate Cortex for automated analysis
+
+Connect MISP → Cortex → TheHive
+
+6. Velociraptor (DFIR & Threat Hunting)
+
+Install Velociraptor
+
+Perform endpoint hunts & forensic analysis
+
+7. n8n (Automation & Orchestration)
+
+Install n8n
+
+Automate alerts, enrichment, and case workflows
+
+⚡ Setup Workflow
+
+Deploy Wazuh Manager, Indexer, Dashboard
+
+Connect Windows/Linux/Cloud/Syslog agents
+
+Forward logs → Graylog / Wazuh Indexer
+
+Integrate MISP for IOC enrichment
+
+Enable TheHive + Cortex for incident triage
+
+Add Velociraptor for DFIR & hunting
+
+Use n8n to automate SOC workflows
+
+📌 Project Roadmap
+
+ Deploy SOC core stack
+
+ Integrate log sources (Windows, Linux, Syslog)
+
+ Add Cloud log ingestion (AWS/Azure/GCP)
+
+ Automate IOC enrichment with n8n
+
+ Build advanced dashboards & detection rules
+
+ Document DFIR playbooks with Velociraptor
